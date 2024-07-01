@@ -1,0 +1,1 @@
+*{margin:0;padding:0;box-sizing:border-box}main{margin-top:5rem;display:flex;justify-content:space-evenly;align-items:center}header{margin-top:5rem;text-align:center}section{display:flex;flex-direction:column;text-align:center}section label{margin-bottom:1rem}textarea{height:20vh;width:30vw}.backgroundColor{background-color:#f7f8f7}.hide{display:none}
