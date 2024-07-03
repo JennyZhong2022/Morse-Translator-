@@ -86,9 +86,6 @@ swapBtn.addEventListener('click', (e) => {
     englishText2.classList.add("backgroundColor")
     englishText2.disabled=true
   }
-
-
-  
   
     
   if (MorseCodeSection2.classList.contains('hide')) {
@@ -104,7 +101,8 @@ swapBtn.addEventListener('click', (e) => {
 })
 
 
-
+// 	If you press the button and then keep pressing it repeatedly, the elevator won’t start moving until you stop pressing the button for a while.
+// The debounce function is similar: it only calls the function after a period of time has passed without the event being triggered again. so wait a little bit ,then func get trigged. 
 const debounce = (func, wait) => {
   let timeout;
   return (...args) => {
@@ -174,7 +172,7 @@ inputMorseCode.forEach(morse => {
     }
   }
   
-  
+
   )
   englishText2.textContent = translatedMorseCode
  
@@ -197,5 +195,7 @@ morseCode2.addEventListener('input', debounce(handleMorseCodeInput, 100))
   
   
   
+
   
-  
+module.exports={audioPlayTime,morseCodeTranslation}
+
