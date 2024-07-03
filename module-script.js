@@ -5,8 +5,6 @@ import handSwapBtn from "./modules/handleSwapBtn.js"
 
 
 
-
-
 export const englishText = document.querySelector('#englishText')
 export const englishText2 = document.querySelector('#englishText2')
 
@@ -23,20 +21,13 @@ export const MorseCodeSection2 = document.querySelector('.MorseCodeSection2')
 
 export const language1 = document.querySelector('.language1')
 export const language2= document.querySelector('.language2')
-
 const swapBtn=document.querySelector('button')
-
-
-
-
-
 
 
 swapBtn.addEventListener('click',handSwapBtn)
 
 
 englishText.addEventListener('input', debounce(handleEnglishInput, 100));
-
 
 
 morseCode2.addEventListener('input', debounce(handleMorseCodeInput, 100))
