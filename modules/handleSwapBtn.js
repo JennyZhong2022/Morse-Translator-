@@ -1,9 +1,9 @@
 import audioPlayTime from "./audioPlayTime.js";
-import { MorseCodeSection2, englishTextSection2, englishTextSection, MorseCodeSection, language1, language2 } from '../module-script.js'
+import { morseCode,MorseCodeSection2, englishTextSection2,englishText2, englishTextSection, MorseCodeSection, language1, language2 } from '../module-script.js'
 import {swapAudio} from './audio.js'
 
 
-const handSwapBtn = (e) => {
+const handleSwapBtn = (e) => {
   e.preventDefault()
   console.log('swap btn');
   MorseCodeSection2.classList.toggle('hide')
@@ -13,17 +13,12 @@ const handSwapBtn = (e) => {
 
   if (MorseCodeSection2.classList.contains('hide')) {
     morseCode.classList.add("backgroundColor")
-    morseCode.disabled=true
-  } else {
-    englishText2.classList.add("backgroundColor")
-    englishText2.disabled=true
-  }
-  
-    
-  if (MorseCodeSection2.classList.contains('hide')) {
+    morseCode.disabled = true
     language2.textContent = 'Morse Code';
     language1.textContent = 'English';
-} else {
+  } else {
+    englishText2.classList.add("backgroundColor")
+    englishText2.disabled = true
     language1.textContent = 'Morse Code';
     language2.textContent = 'English';
   }
@@ -33,4 +28,4 @@ const handSwapBtn = (e) => {
 }
 
 
-export default handSwapBtn
+export default handleSwapBtn

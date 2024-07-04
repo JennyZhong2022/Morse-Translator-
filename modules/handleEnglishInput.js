@@ -6,7 +6,6 @@ import {morseCodeAudio} from './audio.js'
 const handleEnglishInput = (e) => {
   e.preventDefault();
   alertNote.textContent = '';
-  console.log(englishText.value); 
 
   let translatedText = '';
   const inputText = englishText.value.toUpperCase();

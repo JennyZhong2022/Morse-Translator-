@@ -8,6 +8,18 @@ const handleMorseCodeInput = (e) => {
   e.preventDefault()
   alertNote2.textContent = ''
 
+  // Check if the Morse code input is valid
+  // ^: Start of the string.
+  // . (dots)
+  // - (dashes)
+  // \s (whitespace characters, including spaces)
+  // *  zero or multiply times。
+	// 	$: End of the string.
+  if (!/^[.\-\s]*$/.test(morseCode2.value)) {
+    alertNote2.textContent = 'Please enter valid Morse Code';
+  
+  }
+
 
   let translatedMorseCode = ''
   const inputMorseCode = morseCode2.value.split(' ')
@@ -38,17 +50,9 @@ inputMorseCode.forEach(morse => {
   englishText2.textContent = translatedMorseCode
  
   
-	// ^: Start of the string.
-		// . (dots)
-		// - (dashes)
-  // \s (whitespace characters, including spaces)
-  // *  zero or multiply times。
-	// 	$: End of the string.
+	
 
-!/^[.\-\s]*$/.test(morseCode2.value)?
-    alertNote2.textContent = 'Please enter valid Morse Code' 
-  :  audioPlayTime(morseCodeAudio, 0, 500);
-
+audioPlayTime(morseCodeAudio, 0, 500)
  
 }
 
