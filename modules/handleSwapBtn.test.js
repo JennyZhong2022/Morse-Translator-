@@ -80,7 +80,6 @@ describe('handleSwapBtn', () => {
   
     // Check backgroundColor and disabled attributes based on hide state
     if (mockElements.MorseCodeSection2.classList.contains('hide')) {
-      expect(mockElements.morseCode.classList.add).toHaveBeenCalledWith('backgroundColor');
       expect(mockElements.morseCode.disabled).toBe(true);
       expect(mockElements.language1.textContent).toBe('English');
       expect(mockElements.language2.textContent).toBe('Morse Code');

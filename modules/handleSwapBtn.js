@@ -12,7 +12,6 @@ const handleSwapBtn = (e) => {
   MorseCodeSection.classList.toggle('hide')
 
   if (MorseCodeSection2.classList.contains('hide')) {
-    morseCode.classList.add("backgroundColor")
     morseCode.disabled = true
     language2.textContent = 'Morse Code';
     language1.textContent = 'English';
