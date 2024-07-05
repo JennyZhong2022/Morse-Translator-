@@ -20,8 +20,10 @@ const handleEnglishInput = (e) => {
  
   morseCode.textContent = translatedText;
 
-!/^[A-Za-z\s]*$/.test(englishText.value)?
-    alertNote.textContent = 'Please enter valid English': audioPlayTime(morseCodeAudio, 0, 500);
+  if (!/^[A-Za-z\s]*$/.test(englishText.value)) {
+    alertNote.textContent = 'Please enter valid English'
+  }
+    else{audioPlayTime(morseCodeAudio, 0, 500);} 
 };
 
 
