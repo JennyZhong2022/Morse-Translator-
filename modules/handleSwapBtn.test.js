@@ -3,7 +3,11 @@ let handleSwapBtn;
 let mockElements;
 
 describe('handleSwapBtn', () => {
+
+  //Runs before each test case, used to set up the test environment.
   beforeEach(() => {
+
+
     // Mock module-script.js
     mockElements = {
       MorseCodeSection2: {
@@ -57,10 +61,12 @@ describe('handleSwapBtn', () => {
     // Mock audioPlayTime
     jest.mock('./audioPlayTime.js', () => jest.fn());
 
-    // Import handleSwapBtn after mocking
+    // Import handleSwapBtn after mocking，use require rather then import 
     handleSwapBtn = require('./handleSwapBtn').default;
   });
 
+
+  //Runs after each test case, used to clean up the test environment.help ensure that each test runs in a clean and consistent environment,
   afterEach(() => {
     jest.clearAllMocks();
   });
@@ -90,6 +96,9 @@ describe('handleSwapBtn', () => {
       expect(mockElements.language2.textContent).toBe('English');
     }
   });
+
+
+  
   it('should call audioPlayTime with swapAudio', () => {
     const e = {
       preventDefault: jest.fn(),

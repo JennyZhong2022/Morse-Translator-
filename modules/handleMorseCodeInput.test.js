@@ -8,7 +8,7 @@ jest.mock('../module-script.js', () => ({
   englishText2: { textContent: '' },
 }));
 
-jest.mock('./audioPlayTime');
+jest.mock('./audioPlayTime.js', () => jest.fn());
 jest.mock('./audio.js', () => ({
   morseCodeAudio: 'mockAudio',
 }));
@@ -25,7 +25,7 @@ describe('handleMorseCodeInput', () => {
   it('should translate morse code to English text', () => {
     const { morseCode2, englishText2 } = require('../module-script.js');
     morseCode2.value = '.... . .-.. .-.. ---'; // "HELLO"
-    morseCode2.split.mockReturnValue(['....', '.', '.-..', '.-..', '---']);
+    morseCode2.split.mockReturnValue(['....', '.', '.-..', '.-..', '---']); //mockReturnValue is a method provided by Jest for creating mock functions. It allows you to specify the return value of the mock function when it is called.
 
     handleMorseCodeInput(e);
 
