@@ -17,7 +17,8 @@ const handleMorseCodeInput = (e) => {
 	// 	$: End of the string.
   if (!/^[.\-\s]*$/.test(morseCode2.value)) {
     alertNote2.textContent = 'Please enter valid Morse Code';
-  
+  } else {
+    audioPlayTime(morseCodeAudio, 0, 500)
   }
 
 
@@ -52,7 +53,7 @@ inputMorseCode.forEach(morse => {
   
 	
 
-audioPlayTime(morseCodeAudio, 0, 500)
+
  
 }
 

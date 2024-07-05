@@ -11,7 +11,7 @@ const handleEnglishInput = (e) => {
   const inputText = englishText.value.toUpperCase();
 
   for (const el of inputText) {
-    if (el === ' ') {
+    if (el === ' ' || !/^[A-Za-z\s]*$/.test(el)) {
       translatedText += ' ';
     } else if (morseCodeTranslation[el]) {
       translatedText += morseCodeTranslation[el] + ' ';
