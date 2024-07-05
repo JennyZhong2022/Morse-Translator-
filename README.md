@@ -1,8 +1,7 @@
 # Morse-Translator
 
 ## Introduction
-Morse-Translator is a web application that allows users to translate text between English and Morse Code. The app provides an easy-to-use interface for entering text and viewing the corresponding translation. Additionally, the application includes audio playback for Morse Code. It is deployed to gitHub Pages [Morse-Translator](https://jennyzhong2022.github.io/Morse-Translator/).
-
+Morse-Translator is a web application that allows users to translate text between English and Morse Code. The app provides an easy-to-use interface for entering text and viewing the corresponding translation. Additionally, the application includes audio playback for Morse Code. It is deployed to gitHub Pages [Morse-Translator](https://jennyzhong2022.github.io/Morse-Translator-/)
 
 ## Features
 - **English to Morse Code Translation**: Enter English text and get the corresponding Morse Code.
