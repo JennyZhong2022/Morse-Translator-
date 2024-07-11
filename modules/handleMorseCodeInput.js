@@ -23,11 +23,14 @@ const handleMorseCodeInput = (e) => {
 
 
   let translatedMorseCode = ''
+
+  // make it array first
   const inputMorseCode = morseCode2.value.split(' ')
+  console.log(inputMorseCode);
 
 
 
-   
+   // then iterate the array. find the key by value. 
 const findKeyByValue = (object, value) => {
     for (const [key, val] of Object.entries(object)) {
       // console.log(`${key}:${val}`);
@@ -37,6 +40,8 @@ const findKeyByValue = (object, value) => {
     } return null
   }
 
+
+  // find the key, add it to translatedMorseCode. 
 inputMorseCode.forEach(morse => {
     const el = findKeyByValue(morseCodeTranslation, morse)
     if (el) {
