@@ -21,11 +21,9 @@ Morse-Translator is a web application that allows users to translate text betwee
 - JavaScript
 
 ## Screenshots
-![25551720157518_ pic](https://github.com/JennyZhong2022/Morse-Translator-/assets/109143979/429b2d3b-802d-4576-b8a7-825612c40caf)
-![25561720157518_ pic](https://github.com/JennyZhong2022/Morse-Translator-/assets/109143979/9908ddb4-1f6a-411b-bb4d-baec7d85f079)
-![25571720157562_ pic](https://github.com/JennyZhong2022/Morse-Translator-/assets/109143979/c5767c21-0812-42b9-bfcb-b77daa52d75a)
-
-
+![25951720762023_ pic](https://github.com/user-attachments/assets/964bf200-8c84-4faa-873b-d6cfd80911a3)
+![25961720762049_ pic](https://github.com/user-attachments/assets/61e27ce2-001d-4dc8-8d87-a449eec31b4f)
+![25971720762091_ pic](https://github.com/user-attachments/assets/6ad7d178-cdef-4aa1-bbe8-00c51b1a791d)
 
 ## Contact
 For any queries or suggestions, please contact us at email:(zhongxiao2017@gmail.com).
