@@ -19,6 +19,7 @@ Morse-Translator is a web application that allows users to translate text betwee
 - HTML
 - SCSS
 - JavaScript
+- Unit testing with Jest
 
 ## Screenshots
 ![25951720762023_ pic](https://github.com/user-attachments/assets/964bf200-8c84-4faa-873b-d6cfd80911a3)
